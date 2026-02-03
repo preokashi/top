@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>送信完了 | プレ専門学校 お菓子教室</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Zen Maru Gothic', 'Kiwi Maru', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #FFF0F5 0%, #FFE4EC 50%, #FFF5F7 100%);
+    }
+    .chocolate-gradient {
+      background: linear-gradient(135deg, #5D3A2E 0%, #8B5A47 100%);
+    }
+    .card-shadow {
+      box-shadow: 0 10px 40px rgba(93, 58, 46, 0.1);
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="h-full gradient-bg">
+  <div class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+
+    <!-- Decorative icons -->
+    <div class="absolute top-10 left-10 text-5xl opacity-60 float">🧁</div>
+    <div class="absolute top-20 right-20 text-4xl opacity-60 float" style="animation-delay: .5s;">🍰</div>
+    <div class="absolute bottom-20 left-16 text-4xl opacity-60 float" style="animation-delay: 1s;">🍪</div>
+    <div class="absolute bottom-16 right-10 text-5xl opacity-60 float" style="animation-delay: 1.5s;">🎂</div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-3xl p-10 max-w-lg w-full text-center card-shadow relative z-10">
+      <div class="text-6xl mb-4">✉️</div>
+
+      <h1 class="text-3xl md:text-4xl font-bold mb-4" style="color:#5D3A2E;">
+        送信完了
+      </h1>
+
+      <p class="leading-relaxed mb-8" style="color:#8B5A47;">
+        お問い合わせありがとうございます。<br>
+        内容を確認のうえ、担当者よりご連絡いたします。
+      </p>
+
+      <a
+        href="./index.html"
+        class="inline-block chocolate-gradient text-white px-8 py-3 rounded-full text-lg font-medium hover:opacity-90 transition transform hover:scale-105"
+      >
+        トップページへ戻る
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm opacity-70" style="color:#5D3A2E;">
+    © 2025 プレ専門学校 お菓子教室
+  </footer>
+</body>
+</html>
